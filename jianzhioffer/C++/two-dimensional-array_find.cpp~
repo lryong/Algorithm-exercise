@@ -1,8 +1,0 @@
-class Solution {
-public:
-  bool Find(int target, vector<vector<int> > array) {
-    int rows = array.size();
-    int cols = array[0].size();
-    // 从左下角开始找目标
-    int i = rows - 1, j = 0;
-    
