@@ -14,4 +14,4 @@ class Solution:
             else:
                 even_list.append(i)
         return odd_list + even_list
-        
+
