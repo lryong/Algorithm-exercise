@@ -11,4 +11,22 @@ class Solution:
         if not pRoot:
             return  []
         stack = [pRoot]
+        ret = []
+        flag = 0
+        while stack:
+            res = []
+            nextStack = []
+            for i in stack:
+                res.append(i.val)
+                if i.left:
+                    nextStack.append(i.left)
+                if i.right:
+                    nextStack.append(i.right)
+            stack = nextStack
+            flag+=1
+            if flag%2:
+                ret.append(res)
+            else:
+                ret.append(res[::-1])
+        return ret
 
