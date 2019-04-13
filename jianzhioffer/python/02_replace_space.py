@@ -8,6 +8,8 @@
 #!/usr/bin/env python
 # -*- coding:utf-8 -*-
 
+import string
+
 # 实现一个函数，将一个字符串中的每个空格替换成“%20”。例如，当字符串为We Are Happy.则经过替换之后的字符串为We%20Are%20Happy。
 
 # my Solution: trick方法
@@ -20,20 +22,20 @@ class Solution:
 class Solution:
     def replaceSpace(self, s):
         cnt = 0
-        ret = []
         for i in s:
             if i == " ":
                 cnt +=1
+        ret = [None] * (cnt*2+len(s))
         for i in xrange(len(s)-1,-1,-1):
-            print i
-            if s[i] == " ":
+            # print i
+            if s[i] != " ":
                 ret[i+cnt*2] = s[i]
             else:
                 cnt -= 1
                 ret[i+2*cnt] = '%'
                 ret[i+2*cnt+1] = '2'
                 ret[i+2*cnt+2] = '0'
-        return s
+        return "".join(ret)
 
 
 print Solution().replaceSpace("we are young")
