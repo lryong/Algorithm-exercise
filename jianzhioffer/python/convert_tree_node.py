@@ -3,7 +3,7 @@
 # File              : convert_tree_node.py
 # Author            : lryong <15816537946@163.com>
 # Date              : 11.04.2019
-# Last Modified Date: 13.04.2019
+# Last Modified Date: 01.06.2019
 # Last Modified By  : lryong <15816537946@163.com>
 class Solution:
     def Convert(self, pRootOfTree):
