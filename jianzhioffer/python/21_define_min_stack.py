@@ -3,7 +3,7 @@
 # File              : 21_define_min_stack.py
 # Author            : lryong <15816537946@163.com>
 # Date              : 02.06.2019
-# Last Modified Date: 02.06.2019
+# Last Modified Date: 08.06.2019
 # Last Modified By  : lryong <15816537946@163.com>
 
 # 定义栈的数据结构，请在该类型中实现一个能够得到栈中所含最小元素的min函数（时间复杂度应为O（1））。

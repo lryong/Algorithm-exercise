@@ -3,14 +3,12 @@
 # File              : 23_print_from_top_to_bottom.py
 # Author            : lryong <15816537946@163.com>
 # Date              : 02.06.2019
-# Last Modified Date: 02.06.2019
+# Last Modified Date: 08.06.2019
 # Last Modified By  : lryong <15816537946@163.com>
 
 
 # 从上往下打印出二叉树的每个节点，同层节点从左至右打印。
 
-
-# -*- coding:utf-8 -*-
 # class TreeNode:
 #     def __init__(self, x):
 #         self.val = x
